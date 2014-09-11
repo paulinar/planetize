@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/ifImText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I f   I ' m"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#F8CF82"
+            android:textSize="25sp"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/myNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ifImText"
+                android:layout_marginTop="12dp"
+                android:ems="5"
+                android:inputType="number"
+                android:textColor="#F8CF82"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/unitPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:popupBackground="#000000"
+                android:singleLine="true"
+                android:spinnerMode="dropdown"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/onPlanetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="o n  p l a n e t"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#F8CF82"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/firstPlanetPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="12dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:popupBackground="#000000"
+                android:spinnerMode="dropdown"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/thenImText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="12dp"
+            android:text="t h e n   I ' m"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#F8CF82"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/calculatedNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#F8CF82"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/unitReflector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="y e a r s  o l d"
+                android:textColor="#F8CF82"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/onPlanetText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="o n  p l a n e t"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#F8CF82"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/secondPlanetPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:background="#000000"
+                android:popupBackground="#000000"
+                android:spinnerMode="dropdown"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/planetizeMeButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/buttonborder"
+            android:text="P L A N E T I Z E   M E"
+            android:textColor="#18C8B9"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/resetbuttonborder"
+            android:text="R E S E T"
+            android:textColor="#FF806B"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>
+
